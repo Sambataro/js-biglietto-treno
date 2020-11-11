@@ -10,23 +10,23 @@ console.log(numeroKM);
 
 
 // chiedere all'utente età
-var etàPasseggero = prompt("Quanti anni hai?")
-console.log(etàPasseggero);
+var etaPasseggero = prompt("Quanti anni hai?")
+console.log(etaPasseggero);
 
 // sconto 40%
-var over65 = etàPasseggero >= 65 ;
+var over65 = etaPasseggero >= 65 ;
 console.log(over65);
 
 // sconto 20%
-var under18 = etàPasseggero <= 17 ;
+var under18 = etaPasseggero <= 17 ;
 console.log(under18)
 
 // calcolare il prezzo totale del viaggio
-var prezzoBiglietto =( numeroKM * 0.21);
+var prezzoBiglietto = (numeroKM * 0.21);
 if (over65) {
-  prezzoBiglietto =( numeroKM * 0.126);
+  prezzoBiglietto = (numeroKM * 0.126);
 } if  (under18) {
-  prezzoBiglietto =( numeroKM * 0.168);
+  prezzoBiglietto = (numeroKM * 0.168);
 }
 console.log(prezzoBiglietto);
 
